@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1 {
+    margin: 30px;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+.right {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+#box {
+    font-weight: bold;
+    padding: 3px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+}
+
+.row {
+    width: 100%;
+    justify-content: center;
+
+}
+
+p {
+    text-align: justify;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        border: 1px solid black;
+        width: 32%;
+        background-color: antiquewhite;
+        margin-right: 10px;
+    }
+
+    .row {
+        /* width: 100%; */
+        justify-content: center;
+        display: flex;
+    }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        float: left;
+        border: 1px solid black;
+        width: 48%;
+        background-color: antiquewhite;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .col-md-12 {
+        float: left;
+        border: 1px solid black;
+        width: 98%;
+        background-color: antiquewhite;
+        margin-top: 10px;
+        margin-left: 1%;
+        margin-right: 1%;
+        justify-content: center;
+    }
+}
+
+/* ********* Mobile devices only ********* */
+@media (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+        border: 1px solid black;
+        width: 100%;
+        background-color: antiquewhite;
+        margin-bottom: 10px;
+    }
+
+}
